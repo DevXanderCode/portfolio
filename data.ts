@@ -98,6 +98,9 @@ export const languages: ISkill[] = [
 
 export const tools: ISkill[] = [
   { name: "Framer", level: "50%", Icon: BsCircleFill },
+  { name: "Click Up", level: "80%", Icon: BsCircleFill },
+  { name: "Zoom", level: "90%", Icon: BsCircleFill },
+  { name: "Google Meet", level: "99%", Icon: BsCircleFill },
   { name: "Figma", level: "45%", Icon: BsCircleFill },
-  { name: "Adobe XD", level: "35%", Icon: BsCircleFill },
+  //   { name: "Adobe XD", level: "35%", Icon: BsCircleFill },
 ];
