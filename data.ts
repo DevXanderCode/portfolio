@@ -6,7 +6,8 @@ import {
   AiOutlineMobile,
 } from "react-icons/ai";
 import { MdDeveloperMode } from "react-icons/md";
-import { IService } from "./types";
+import { BsCircleFill } from "react-icons/bs";
+import { IService, ISkill } from "./types";
 
 export const services: IService[] = [
   {
@@ -50,4 +51,53 @@ export const services: IService[] = [
       "Handle database, server, api using <b>Node js</b> and <b>Expressjs</b>",
     Icon: AiOutlineAntDesign,
   },
+];
+
+export const languages: ISkill[] = [
+  {
+    name: "JavaScript",
+    level: "100%",
+    Icon: BsCircleFill,
+  },
+  {
+    name: "React",
+    level: "90%",
+    Icon: BsCircleFill,
+  },
+  {
+    name: "React Native",
+    level: "80%",
+    Icon: BsCircleFill,
+  },
+  {
+    name: "Dart",
+    level: "65%",
+    Icon: BsCircleFill,
+  },
+  {
+    name: "Flutter",
+    level: "70%",
+    Icon: BsCircleFill,
+  },
+  {
+    name: "Python",
+    level: "50%",
+    Icon: BsCircleFill,
+  },
+  {
+    name: "TypeScript",
+    level: "80%",
+    Icon: BsCircleFill,
+  },
+  {
+    name: "Nodejs",
+    level: "70%",
+    Icon: BsCircleFill,
+  },
+];
+
+export const tools: ISkill[] = [
+  { name: "Framer", level: "50%", Icon: BsCircleFill },
+  { name: "Figma", level: "45%", Icon: BsCircleFill },
+  { name: "Adobe XD", level: "35%", Icon: BsCircleFill },
 ];
