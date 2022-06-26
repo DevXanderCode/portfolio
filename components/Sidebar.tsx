@@ -17,39 +17,47 @@ const Sidebar: React.FC = () => {
       />
 
       <h3 className="my-4 text-3xl font-medium tracking-wider">
-        <span>Alex </span>
+        <span className="font-Kaushan ">Alex </span>
         Chinedu
       </h3>
       <p className="px-2 py-1 my-3 bg-gray-200 rounded-full">
         Web and Mobile Developer
       </p>
-      <p>
+      <a
+        className="flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full"
+        href=""
+        download=""
+      >
         <GiTie className="w-6 h-6" /> Download Resume
-      </p>
+      </a>
 
       {/* Social icons */}
-      <div className="flex">
+      <div className="flex justify-around w-9/12 mx-auto my-5 text-green-500 md:w-full">
         <a href="">
-          <AiFillLinkedin className="w-8 h-8" />
+          <AiFillLinkedin className="w-8 h-8 cursor-pointer" />
         </a>
         <a href="">
-          <AiFillGithub className="w-8 h-8" />
+          <AiFillGithub className="w-8 h-8 cursor-pointer" />
         </a>
         <a href="">
-          <AiFillTwitterCircle className="w-8 h-8" />
+          <AiFillTwitterCircle className="w-8 h-8 cursor-pointer" />
         </a>
       </div>
       {/* Address */}
-      <div>
-        <div>
+      <div className="py-4 my-5 -mx-4 bg-gray-200">
+        <div className="flex items-center justify-center space-x-2">
           <GoLocation />
           <span>Lagos, Nigeria</span>
         </div>
-        <p>nwekealexchinedu@gmail.com</p>
-        <p>08083409309</p>
+        <p className="my-3">nwekealexchinedu@gmail.com</p>
+        <p className="my-3">08083409309</p>
         {/* Email Button */}
-        <button>Email Me</button>
-        <button>Toggle Theme</button>
+        <button className="w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-green-400 to-blue-400">
+          Email Me
+        </button>
+        <button className="w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-green-400 to-blue-400">
+          Toggle Theme
+        </button>
       </div>
     </div>
   );
