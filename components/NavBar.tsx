@@ -18,6 +18,7 @@ const NavItem: React.FunctionComponent<NavItemProps> = ({
   return activeItem !== name ? (
     <Link href={route}>
       <span
+        className="cursor-pointer hover:text-green"
         onClick={() => {
           setActiveItem(name);
         }}
@@ -39,9 +40,11 @@ const NavBar: React.FC = () => {
   }, [pathname]);
 
   return (
-    <div className="flex items-center justify-between">
-      <span className="font-bold text-green">{activeItem}</span>
-      <div className="flex space-x-3 font-lg">
+    <div className="flex items-center justify-between px-5 py-3 my-3">
+      <span className="text-xl font-bold border-b-4 text-green border-green md:text-2xl">
+        {activeItem}
+      </span>
+      <div className="flex space-x-5 text-lg">
         <NavItem
           setActiveItem={setActiveItem}
           name="About"
