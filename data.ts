@@ -7,7 +7,7 @@ import {
 } from "react-icons/ai";
 import { MdDeveloperMode } from "react-icons/md";
 import { BsCircleFill } from "react-icons/bs";
-import { IService, ISkill } from "./types";
+import { IService, ISkill, IProject } from "./types";
 
 export const services: IService[] = [
   {
@@ -103,4 +103,17 @@ export const tools: ISkill[] = [
   { name: "Google Meet", level: "99%", Icon: BsCircleFill },
   { name: "Figma", level: "45%", Icon: BsCircleFill },
   //   { name: "Adobe XD", level: "35%", Icon: BsCircleFill },
+];
+
+export const projects: IProject[] = [
+  {
+    name: "COVID Tracker",
+    description:
+      "This web app show statistics of the Corona virus both globally and can be filtered to a specific country, it shows the death, infected and recovered count and plot them in a chart as well",
+    category: ["react"],
+    image_path: "/images/covid-tracker.png",
+    github_url: "https://github.com/DevXanderCode/covid-19-tracker",
+    deployed_url: "https://devxandercode.github.io/covid-19-tracker/",
+    key_techs: ["React", "Chartjs", "Material UI", "Axios"],
+  },
 ];
