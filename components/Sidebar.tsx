@@ -6,8 +6,10 @@ import {
 } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
 import { GiTie } from "react-icons/gi";
+import {useTheme} from 'next-themes'
 
 const Sidebar: React.FC = () => {
+  const {theme, setTheme} =  useTheme();
   return (
     <div>
       <img
@@ -61,7 +63,8 @@ const Sidebar: React.FC = () => {
       >
         Email Me
       </button>
-      <button className="w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-green to-blue-400">
+      <button className="w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-green to-blue-400"
+       onClick={() => {theme === 'light' ? setTheme('dark'): setTheme('light')}}>
         Toggle Theme
       </button>
     </div>
