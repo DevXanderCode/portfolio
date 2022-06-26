@@ -1,13 +1,7 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-
-interface NavItemProps {
-  activeItem: string;
-  setActiveItem: (item: string) => void;
-  name: string;
-  route: string;
-}
+import { NavItemProps } from "../types";
 
 const NavItem: React.FunctionComponent<NavItemProps> = ({
   activeItem,

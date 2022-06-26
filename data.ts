@@ -1,13 +1,6 @@
 import { ReactSVGElement } from "react";
-import { IconType } from "react-icons";
 import { RiComputerLine } from "react-icons/ri";
-
-interface IService {
-  id: number;
-  title: string;
-  about: string;
-  Icon: IconType;
-}
+import { IService } from "./types";
 
 export const services: IService[] = [
   {
