@@ -2,6 +2,32 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 
+interface NavItemProps {
+  activeItem: string;
+  setActiveItem: (item: string) => void;
+  name: string;
+  route: string;
+}
+
+const NavItem: React.FunctionComponent<NavItemProps> = ({
+  activeItem,
+  name,
+  route,
+  setActiveItem,
+}) => {
+  return activeItem !== name ? (
+    <Link href={route}>
+      <span
+        onClick={() => {
+          setActiveItem(name);
+        }}
+      >
+        {name}
+      </span>
+    </Link>
+  ) : null;
+};
+
 const NavBar: React.FC = () => {
   const [activeItem, setActiveItem] = useState<string>("");
   const { pathname } = useRouter();
@@ -16,39 +42,24 @@ const NavBar: React.FC = () => {
     <div className="flex items-center justify-between">
       <span className="font-bold text-green">{activeItem}</span>
       <div className="flex space-x-3 font-lg">
-        {activeItem !== "About" && (
-          <Link href="/">
-            <span
-              onClick={() => {
-                setActiveItem("About");
-              }}
-            >
-              About
-            </span>
-          </Link>
-        )}
-        {activeItem !== "Projects" && (
-          <Link href="/projects">
-            <span
-              onClick={() => {
-                setActiveItem("Projects");
-              }}
-            >
-              Projects
-            </span>
-          </Link>
-        )}
-        {activeItem !== "Resume" && (
-          <Link href="/resume">
-            <span
-              onClick={() => {
-                setActiveItem("Resume");
-              }}
-            >
-              Resume
-            </span>
-          </Link>
-        )}
+        <NavItem
+          setActiveItem={setActiveItem}
+          name="About"
+          route="/"
+          activeItem={activeItem}
+        />
+        <NavItem
+          setActiveItem={setActiveItem}
+          name="Projects"
+          route="/projects"
+          activeItem={activeItem}
+        />
+        <NavItem
+          setActiveItem={setActiveItem}
+          name="Resume"
+          route="/resume"
+          activeItem={activeItem}
+        />
       </div>
     </div>
   );
