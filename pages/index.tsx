@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import Head from "next/head";
 import { motion } from "framer-motion";
 import { ServiceCard } from "../components";
 import { services } from "../data";
@@ -13,6 +14,9 @@ const index: NextPage = () => {
       animate="animate"
       exit="exit"
     >
+      <Head>
+        <title>Web | Mobile Developer| portfolio</title>
+      </Head>
       <h5 className="my-3 font-medium">
         In publishing and graphic design, Lorem ipsum is a placeholder text
         commonly used to demonstrate the visual form of a document or a typeface

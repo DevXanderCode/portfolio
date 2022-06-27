@@ -1,4 +1,5 @@
 import { NextPage } from "next";
+import Head from "next/head";
 import { motion } from "framer-motion";
 import { Bar } from "../components";
 import { fadeInUp, routeAnimation } from "../animations";
@@ -13,6 +14,9 @@ const Resume: NextPage = () => {
       animate="animate"
       exit="exit"
     >
+      <Head>
+        <title>Web | Mobile Developer| portfolio</title>
+      </Head>
       {/* Education and Experience */}
       <div className="grid gap-6 md:grid-cols-2">
         <motion.div variants={fadeInUp} initial="initial" animate="animate">

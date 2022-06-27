@@ -5,10 +5,19 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
           href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto:wght@100;300;400;500;700;900&display=swap"
           rel="stylesheet"
+        />
+        <meta name="description" content="MERN Developer looking for a job" />
+        <meta
+          name="description"
+          content="Flutter Developer, Mobile developer, React Native developer looking for a job"
+        />
+        <meta
+          name="keywords"
+          content="Flutter Developer, Mobile developer, React Native developer, MERN stack developer"
         />
       </Head>
       <body className="bg-blue-400 bg-gradient-to-r from-green to-blue-400 dark:from-dark-500 dark:to-dark-700 dark:text-white">

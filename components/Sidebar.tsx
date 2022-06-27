@@ -18,10 +18,11 @@ const Sidebar: React.FC = () => {
   return (
     <div>
       <Image
-        src="https://res.cloudinary.com/chinedu/image/upload/v1629700885/ndoqwxe58ode0jadq2ez.jpg"
+        // src="https://res.cloudinary.com/chinedu/image/upload/v1629700885/ndoqwxe58ode0jadq2ez.jpg"
+        src="/images/myPic.jpeg"
         className="mx-auto rounded-full"
-        width={128}
-        height={128}
+        width="128px"
+        height="128px"
         layout="intrinsic"
         quality={100}
         alt="user avartar"
@@ -44,14 +45,25 @@ const Sidebar: React.FC = () => {
 
       {/* Social icons */}
       <div className="flex justify-around w-9/12 mx-auto my-5 text-green md:w-full">
-        <a href="">
+        <a
+          href="https://www.linkedin.com/in/chinedu-alex-nweke/"
+          target="__blank"
+          aria-label="LinkedIn"
+        >
           <AiFillLinkedin className="w-8 h-8 cursor-pointer" />
         </a>
-        <a href="">
+        <a
+          href="https://github.com/devxandercode"
+          target="__blank"
+          aria-label="GitHub"
+        >
           <AiFillGithub className="w-8 h-8 cursor-pointer" />
         </a>
-        <a href="">
-          <AiFillTwitterCircle className="w-8 h-8 cursor-pointer" />
+        <a href="https://twitter.com/XanderDev2" target="__blank">
+          <AiFillTwitterCircle
+            className="w-8 h-8 cursor-pointer"
+            aria-label="twitter"
+          />
         </a>
       </div>
       {/* Address */}

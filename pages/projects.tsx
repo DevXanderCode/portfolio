@@ -1,4 +1,5 @@
 import { NextPage } from "next";
+import Head from "next/head";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { ProjectCard, ProjectsNavBar } from "../components";
@@ -32,6 +33,9 @@ const Projects: NextPage = () => {
       animate="animate"
       exit="exit"
     >
+      <Head>
+        <title>Web | Mobile Developer| portfolio</title>
+      </Head>
       <ProjectsNavBar
         handleFilterHandler={handleFilterHandler}
         activeNav={active}
