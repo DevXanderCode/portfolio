@@ -39,4 +39,5 @@ export type Category =
   | "react native"
   | "flutter"
   | "python"
-  | "typescript";
+  | "typescript"
+  | "nextjs";
