@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { ProjectCard, ProjectsNavBar } from "../components";
 import { projects as projectsData } from "../data";
 import { Category, IProject } from "../types";
-import { fadeInUp, stagger } from "../animations";
+import { fadeInUp, stagger, routeAnimation } from "../animations";
 
 const Projects: NextPage = () => {
   const [projects, setProjects] = useState<IProject[]>(projectsData);
@@ -24,7 +24,13 @@ const Projects: NextPage = () => {
   };
 
   return (
-    <div className="px-5 py-2 overflow-y-scroll h-[90vh]">
+    <motion.div
+      className="px-5 py-2 overflow-y-scroll h-[90vh]"
+      variants={routeAnimation}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+    >
       <ProjectsNavBar
         handleFilterHandler={handleFilterHandler}
         activeNav={active}
@@ -45,7 +51,7 @@ const Projects: NextPage = () => {
           </motion.div>
         ))}
       </motion.div>
-    </div>
+    </motion.div>
   );
 };
 

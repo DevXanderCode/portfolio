@@ -2,11 +2,17 @@ import type { NextPage } from "next";
 import { motion } from "framer-motion";
 import { ServiceCard } from "../components";
 import { services } from "../data";
-import { fadeInUp, stagger } from "../animations";
+import { fadeInUp, stagger, routeAnimation } from "../animations";
 
 const index: NextPage = () => {
   return (
-    <div className="flex flex-col flex-grow px-6 pt-1">
+    <motion.div
+      className="flex flex-col flex-grow px-6 pt-1"
+      variants={routeAnimation}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+    >
       <h5 className="my-3 font-medium">
         In publishing and graphic design, Lorem ipsum is a placeholder text
         commonly used to demonstrate the visual form of a document or a typeface
@@ -32,7 +38,7 @@ const index: NextPage = () => {
           ))}
         </div>
       </motion.div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,12 +1,17 @@
 import { NextPage } from "next";
 import { motion } from "framer-motion";
 import { Bar } from "../components";
-import { fadeInUp } from "../animations";
+import { fadeInUp, routeAnimation } from "../animations";
 import { languages, tools } from "../data";
 
 const Resume: NextPage = () => {
   return (
-    <div className="px-6 py-2">
+    <motion.div
+      className="px-6 py-2"
+      variants={routeAnimation}
+      initial="initial"
+      animate="animate"
+    >
       {/* Education and Experience */}
       <div className="grid gap-6 md:grid-cols-2">
         <motion.div variants={fadeInUp} initial="initial" animate="animate">
@@ -54,7 +59,7 @@ const Resume: NextPage = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
