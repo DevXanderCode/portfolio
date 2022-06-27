@@ -18,10 +18,10 @@ const index: NextPage = () => {
         <title>Web | Mobile Developer| portfolio</title>
       </Head>
       <h5 className="my-3 font-medium">
-        In publishing and graphic design, Lorem ipsum is a placeholder text
-        commonly used to demonstrate the visual form of a document or a typeface
-        without relying on meaningful content. Lorem ipsum may be used as a
-        placeholder before final copy is available.
+        A Full stack web and Mobile Developer, seeking adventure and an
+        opportunity to make impact. A Fast learner and creative developer who
+        loves what he does and is easy to work with. Advise and consultation
+        options also available.
       </h5>
       <motion.div
         variants={stagger}

@@ -10,10 +10,10 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto:wght@100;300;400;500;700;900&display=swap"
           rel="stylesheet"
         />
-        <meta name="description" content="MERN Developer looking for a job" />
+
         <meta
           name="description"
-          content="Flutter Developer, Mobile developer, React Native developer looking for a job"
+          content="Flutter Developer, Mobile developer, React Native developer,MERN Developer,Freelancer"
         />
         <meta
           name="keywords"

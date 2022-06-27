@@ -73,7 +73,7 @@ const Sidebar: React.FC = () => {
           <span>Lagos, Nigeria</span>
         </div>
         <p className="my-3">nwekealexchinedu@gmail.com</p>
-        <p className="my-3">08083409309</p>
+        <p className="my-3">+234 8083409309</p>
       </div>
       {/* Email Button */}
       <button

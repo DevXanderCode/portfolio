@@ -59,6 +59,7 @@ const ProjectCard: React.FC<{
             >
               <a
                 href={github_url}
+                target="__blank"
                 className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-200 dark:bg-dark-200"
               >
                 <AiFillGithub />
@@ -68,6 +69,7 @@ const ProjectCard: React.FC<{
               {deployed_url && (
                 <a
                   href={deployed_url}
+                  target="__blank"
                   className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-200 dark:bg-dark-200"
                 >
                   <AiFillProject />

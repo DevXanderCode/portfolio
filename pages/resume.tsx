@@ -26,10 +26,11 @@ const Resume: NextPage = () => {
             <p className="font-semibold">
               University of Port-Harcourt (2017 - present)
             </p>
-            <p className="my-1">
-              In publishing and graphic design, Lorem ipsum is a placeholder
-              text commonly used to In publishing and graphic design, Lorem
-            </p>
+
+            <h5 className="my-1 text-xl font-bold">
+              Google Africa Developement Scholarship(GADS)
+            </h5>
+            <p className="font-semibold">Virtual(April 2020 - November 2020)</p>
           </div>
         </motion.div>
         <motion.div variants={fadeInUp} initial="initial" animate="animate">
@@ -37,9 +38,9 @@ const Resume: NextPage = () => {
           <div>
             <h5 className="my-1 text-xl font-bold">Lead Front End Developer</h5>
             <p className="font-semibold">Digit Home Limited (2022 - present)</p>
-            <p className="my-3">
-              I worked as the lead frontend developer for both mobile and web of
-              this property tech start up based in Lagos Nigeria
+            <h5 className="my-1 text-xl font-bold">Lead Frontend Developer</h5>
+            <p className="font-semibold">
+              EDO STATE GOVERNMENT [EDSG] (Dec 2020 - 2021)
             </p>
           </div>
         </motion.div>
