@@ -35,7 +35,7 @@ export const services: IService[] = [
     id: 4,
     title: "API Development",
     about:
-      "I develop robust REST APIs with <b>Node js</b>, <b>Expressjs</b>, <b>Loopbackjs</b> and <b>Nextjs</b>",
+      "I develop robust REST and GraphQL APIs with <b>Node js</b>, <b>Expressjs</b>, <b>Loopbackjs</b> and <b>Nextjs</b>",
     Icon: AiOutlineApi,
   },
   {
@@ -97,12 +97,12 @@ export const languages: ISkill[] = [
 ];
 
 export const tools: ISkill[] = [
-  { name: "Framer", level: "50%", Icon: BsCircleFill },
+  { name: "Git", level: "80%", Icon: BsCircleFill },
   { name: "Click Up", level: "80%", Icon: BsCircleFill },
   { name: "Zoom", level: "90%", Icon: BsCircleFill },
   { name: "Google Meet", level: "99%", Icon: BsCircleFill },
   { name: "Figma", level: "45%", Icon: BsCircleFill },
-  //   { name: "Adobe XD", level: "35%", Icon: BsCircleFill },
+  { name: "VSCode", level: "75%", Icon: BsCircleFill },
 ];
 
 export const projects: IProject[] = [
