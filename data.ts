@@ -107,6 +107,7 @@ export const tools: ISkill[] = [
 
 export const projects: IProject[] = [
   {
+    id: 1,
     name: "COVID Tracker",
     description:
       "This web app show statistics of the Corona virus both globally and can be filtered to a specific country, it shows the death, infected and recovered count and plot them in a chart as well",

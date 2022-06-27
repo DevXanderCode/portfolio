@@ -11,6 +11,7 @@ const Resume: NextPage = () => {
       variants={routeAnimation}
       initial="initial"
       animate="animate"
+      exit="exit"
     >
       {/* Education and Experience */}
       <div className="grid gap-6 md:grid-cols-2">

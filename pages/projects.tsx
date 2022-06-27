@@ -9,6 +9,7 @@ import { fadeInUp, stagger, routeAnimation } from "../animations";
 const Projects: NextPage = () => {
   const [projects, setProjects] = useState<IProject[]>(projectsData);
   const [active, setActive] = useState<Category | "all">("all");
+  const [showDetails, setShowDetails] = useState<number | null>(null);
 
   const handleFilterHandler = (category: Category | "all") => {
     setActive(category);
@@ -47,7 +48,11 @@ const Projects: NextPage = () => {
             variants={fadeInUp}
             className="col-span-12 p-2 bg-gray-200 rounded-lg sm:col-span-6 lg:col-span-4 dark:bg-dark-200"
           >
-            <ProjectCard project={project} />
+            <ProjectCard
+              project={project}
+              showDetails={showDetails}
+              setShowDetails={setShowDetails}
+            />
           </motion.div>
         ))}
       </motion.div>

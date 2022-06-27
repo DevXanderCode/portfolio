@@ -6,8 +6,13 @@ import { motion } from "framer-motion";
 import { IProject } from "../types";
 import { fadeInUp, stagger } from "../animations";
 
-const ProjectCard: React.FC<{ project: IProject }> = ({
+const ProjectCard: React.FC<{
+  project: IProject;
+  showDetails: number | null;
+  setShowDetails: (t: number | null) => void;
+}> = ({
   project: {
+    id,
     name,
     image_path,
     category,
@@ -16,25 +21,29 @@ const ProjectCard: React.FC<{ project: IProject }> = ({
     description,
     key_techs,
   },
+  showDetails,
+  setShowDetails,
 }) => {
-  const [showDetails, setShowDetails] = useState<boolean>(false);
   return (
     <div className="">
       <Image
         src={image_path}
         alt={name}
         className="cursor-pointer"
-        onClick={() => setShowDetails((prev) => !prev)}
+        onClick={() => setShowDetails(id)}
         width="300"
         height="150"
         layout="responsive"
       />
       <p className="my-2 text-center">{name}</p>
 
-      {showDetails && (
-        <div className="absolute top-0 left-0 z-10 grid w-full h-auto p-2 text-black bg-gray-100 md:grid-cols-2 gap-x-12 dark:text-white dark:bg-dark-100">
+      {showDetails === id && (
+        <div className="absolute top-0 left-0 z-10 grid w-full h-auto p-2 text-black bg-gray-100 rounded-lg md:grid-cols-2 gap-x-12 dark:text-white dark:bg-dark-100 md:p-10">
           <motion.div variants={stagger} initial="initial" animate="animate">
-            <motion.div variants={fadeInUp}>
+            <motion.div
+              variants={fadeInUp}
+              className="border-4 dark:border-gray-100 border-dark-100"
+            >
               <Image
                 src={image_path}
                 alt={name}
@@ -94,7 +103,7 @@ const ProjectCard: React.FC<{ project: IProject }> = ({
 
           <button
             className="absolute p-1 bg-gray-200 rounded-full top-3 right-3 focus:outline-none dark:bg-dark-200"
-            onClick={() => setShowDetails(false)}
+            onClick={() => setShowDetails(null)}
           >
             <MdClose size={30} />
           </button>
