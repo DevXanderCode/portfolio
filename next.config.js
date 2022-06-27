@@ -6,6 +6,9 @@ const nextConfig = {
   //   concurrentFeatures: false, // <- Turn this option to false
   //   serverComponents: true,
   // },
+  images: {
+    domains: ["res.cloudinary.com"],
+  },
 };
 
 module.exports = nextConfig;

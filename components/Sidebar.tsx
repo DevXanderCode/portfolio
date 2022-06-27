@@ -17,9 +17,13 @@ const Sidebar: React.FC = () => {
 
   return (
     <div>
-      <img
+      <Image
         src="https://res.cloudinary.com/chinedu/image/upload/v1629700885/ndoqwxe58ode0jadq2ez.jpg"
-        className="w-32 h-32 mx-auto rounded-full"
+        className="mx-auto rounded-full"
+        width={128}
+        height={128}
+        layout="intrinsic"
+        quality={100}
         alt="user avartar"
       />
 
