@@ -6,7 +6,7 @@ import { Category, IProject } from "../types";
 
 const Projects: NextPage = () => {
   const [projects, setProjects] = useState<IProject[]>(projectsData);
-  const [active, setActive] = useState("all");
+  const [active, setActive] = useState<Category | "all">("all");
 
   const handleFilterHandler = (category: Category | "all") => {
     setActive(category);
