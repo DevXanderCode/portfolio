@@ -252,4 +252,16 @@ export const projects: IProject[] = [
     // deployed_url: "https://alex-portfolio-nu.vercel.app/",
     key_techs: ["HTML", "CSS", "manifest version 3"],
   },
+  {
+    id: 12,
+    name: "TvShow Extension",
+    description:
+      "A Tv Show search extension that helps you search for your favourite tv shows from IMDB, and can also read text out in english",
+    category: ["chrome extension"],
+    image_path: "/images/tvShowExtension.png",
+    github_url:
+      "https://github.com/DevXanderCode/tv-show-search-chrome-extension",
+    // deployed_url: "https://alex-portfolio-nu.vercel.app/",
+    key_techs: ["HTML", "CSS", "manifest version 3"],
+  },
 ];
