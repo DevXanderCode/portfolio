@@ -235,9 +235,21 @@ export const projects: IProject[] = [
     key_techs: [
       "React",
       "TypeScript",
+      "CSS",
       "Webpack",
       "manifest_version 3",
       "OpenWeatherMap",
     ],
+  },
+  {
+    id: 11,
+    name: "Pomodoro Extension",
+    description:
+      "A pomodoro chrome extension that helps increase your productivity by implementing the pomodoro technique to todo list",
+    category: ["chrome extension"],
+    image_path: "/images/pomodoroExtension.png",
+    github_url: "https://github.com/DevXanderCode/pomodoro-chrome-extension",
+    // deployed_url: "https://alex-portfolio-nu.vercel.app/",
+    key_techs: ["HTML", "CSS", "manifest version 3"],
   },
 ];
