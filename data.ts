@@ -262,6 +262,6 @@ export const projects: IProject[] = [
     github_url:
       "https://github.com/DevXanderCode/tv-show-search-chrome-extension",
     // deployed_url: "https://alex-portfolio-nu.vercel.app/",
-    key_techs: ["HTML", "CSS", "manifest version 3"],
+    key_techs: ["HTML", "CSS", "IMDB-api", "manifest version 3"],
   },
 ];
