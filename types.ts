@@ -41,4 +41,5 @@ export type Category =
   | "flutter"
   | "python"
   | "typescript"
-  | "nextjs";
+  | "nextjs"
+  | "chrome extension"

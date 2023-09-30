@@ -223,4 +223,21 @@ export const projects: IProject[] = [
       "TailwindCss",
     ],
   },
+  {
+    id: 10,
+    name: "Weather Extension",
+    description:
+      "A Weather chrome extension that helps you keep track of the weather of your preferred cities around the world",
+    category: ["react", "typescript", "chrome extension"],
+    image_path: "/images/weatherExtension.png",
+    github_url: "https://github.com/DevXanderCode/weather-chrome-extension",
+    // deployed_url: "https://alex-portfolio-nu.vercel.app/",
+    key_techs: [
+      "React",
+      "TypeScript",
+      "Webpack",
+      "manifest_version 3",
+      "OpenWeatherMap",
+    ],
+  },
 ];

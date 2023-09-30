@@ -29,6 +29,7 @@ const ProjectsNavBar: React.FC<{
         "loopback",
         "typescript",
         "nextjs",
+        "chrome extension",
       ]?.map((value) => (
         <NavItem
           // @ts-ignore
